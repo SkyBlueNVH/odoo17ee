@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_contract_salary_resume_net_in" model="hr.contract.salary.resume">
+        <field name="name">Net</field>
+        <field name="value_type">payslip</field>
+        <field name="code">NET</field>
+        <field name="category_id" ref="hr_contract_salary.hr_contract_salary_resume_category_monthly_salary"/>
+        <field name="impacts_monthly_total" eval="True"/>
+        <field name="structure_type_id" ref="l10n_in_hr_payroll.hr_payroll_salary_structure_type_ind_emp"/>
+    </record>
+
+    <record id="hr_contract_salary_resume_gross_in" model="hr.contract.salary.resume">
+        <field name="name">Gross</field>
+        <field name="value_type">contract</field>
+        <field name="code">wage_with_holidays</field>
+        <field name="category_id" ref="hr_contract_salary.hr_contract_salary_resume_category_monthly_salary"/>
+        <field name="structure_type_id" ref="l10n_in_hr_payroll.hr_payroll_salary_structure_type_ind_emp"/>
+    </record>
+
+    <record id="hr_contract_salary_resume_in_emp_cost" model="hr.contract.salary.resume">
+        <field name="name">Employer Cost</field>
+        <field name="value_type">contract</field>
+        <field name="code">final_yearly_costs</field>
+        <field name="category_id" ref="hr_contract_salary.hr_contract_salary_resume_category_total"/>
+        <field name="structure_type_id" ref="l10n_in_hr_payroll.hr_payroll_salary_structure_type_ind_emp"/>
+    </record>
+</odoo>

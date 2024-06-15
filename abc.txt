@@ -1,0 +1,5 @@
+<img class="img img-fluid" alt="Tập tin nhị phân" 
+src="http://localhost:8069/web/image?model=hr.employee&amp;id=3&amp;field=image_128" border="1" name="image_1920">
+
+
+base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
